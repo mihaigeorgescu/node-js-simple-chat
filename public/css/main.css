@@ -1,0 +1,71 @@
+body {
+	font: 13px Helvetica, Arial;
+}
+
+#chat-form {
+	margin-top: 10px;
+}
+
+#button-submit {
+	width: 100%;
+}
+#new-room {
+	cursor: pointer;
+}
+#m {
+	width: 100%;
+}
+
+#chat-tabpanel {
+	margin-top: 10px;
+}
+
+#chat-tabpanel .tab-pane {
+	padding-top: 10px;
+}
+
+ul.messages {
+	list-style: none;
+	padding: 0px;
+	margin-top: 10px;
+}
+
+ul.messages li {
+	padding: 2px;
+}
+
+ul.messages li:nth-child(odd) {
+	background: #fafafa;
+}
+
+.users {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.add-user {
+	margin-top: 10px;
+}
+
+form.add-user input,
+form.add-user button {
+	width: 100%;
+}
+
+.row.message-box {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+}
+
+row.messages-container {
+	max-height: 100px;
+}
+
+#global #other-users {
+	display: none;
+}
+
+.new-user-message, .user-left-message {
+	color: #337ab7;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Minichat</title>
+        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div role="tabpanel" id="chat-tabpanel">
+                    <div class="col-md-12">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li><a id="new-room">New Room</a></li>
+                            <li role="presentation" class="hidden"><a href="#newroom" aria-controls="newroom" role="tab" data-toggle="tab">+</a></li>
+                            <li role="presentation" class="active"><a href="#global" aria-controls="global" role="tab" data-toggle="tab">All</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane" id="newroom">
+                            <div class="col-md-9">
+                                <ul class="messages"></ul>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="users list-group">
+                                            <li class="list-group-item li-title"><strong>Room Users</strong></li>
+                                        </ul>
+                                        <ul class="other-users list-group">
+                                            <li class="list-group-item li-title"><strong>Others</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane active" id="global">
+                            <div class="col-md-9">
+                                <ul class="messages"></ul>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="users list-group">
+                                    <li class="list-group-item"><strong>Room Users</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row message-box">
+                <form id="chat-form" role="form">
+                    <div class="col-md-11">
+                        <input type="text" class="form-control" id="message-box" placeholder="Message" aria-describedby="basic-addon2" />
+                    </div>
+                    <div class="col-md-1">
+                        <button type="submit" class="btn btn-primary" id="button-submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <script src="//cdn.socket.io/socket.io-1.2.0.js"></script>
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+        <script src="./js/main.js"></script>
+
+    </body>
+
+</html>
